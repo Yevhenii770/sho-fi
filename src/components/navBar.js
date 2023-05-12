@@ -1,23 +1,23 @@
-import Link from "next/link";
+"use client";
+
 import Earth from "../svg/earth-svgrepo-com.svg";
+import Logo from "./logo";
+import React, { useState } from "react";
+
 export default function Navbar() {
+  const [showModal, setShowModal] = useState(false);
+
+  const togleModal = () => {
+    setShowModal(!showModal);
+  };
+
   return (
-    <header>
-      <div className=" container max-w-screen-xl bg-slate-400 py-4 flex items-center justify-between">
-        <Link href="/">
-          Sho-<span>Fi</span>
-        </Link>
-        {/* <nav>
-          <ul className="flex justify-center gap-4">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/search">Search</Link>
-            </li>
-          </ul>
-        </nav> */}
-        <Earth />
+    <header className=" bg-slate-400">
+      <div className=" container max-w-screen-xl py-4 flex items-center justify-between">
+        <Logo />
+        <button onClick={togleModal}>
+          <Earth />
+        </button>
       </div>
     </header>
   );
