@@ -3,7 +3,7 @@ import ButtonSearch from "@/components/buttonSearch";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container hover:ease-in ">
       <h1>Hey man, this app will help you find your dream couple</h1>
       <p>Just use the search below</p>
       <ButtonSearch />

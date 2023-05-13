@@ -1,20 +1,16 @@
-import Link from "next/link";
+import Earth from "../svg/earth-svgrepo-com.svg";
+import MobileModal from "./mobileModal";
 
-export const MobileMenu = () => {
+const MobileMenu = ({ show, togleModal }) => {
   return (
-    <div>
-      <div>
-        <button>Close</button>
-        <ul className="gap-4">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/search">Search</Link>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <>
+      <button onClick={togleModal}>
+        <Earth />
+      </button>
+      {show && <MobileModal onClose={togleModal} />}
+    </>
   );
 };
+
 export default MobileMenu;
+
