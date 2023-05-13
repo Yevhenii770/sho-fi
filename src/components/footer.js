@@ -1,11 +1,28 @@
 import Logo from "./logo";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="container bg-main py-4">
+    <footer className="bg-main">
+      <div className="container py-4 flex flex-col items-center">
         <Logo />
-        <p>Created by Yevhenii</p>
+        <p>
+          <Link
+            href="https://www.linkedin.com/in/yevhenii-sitolenko/"
+            className=""
+          >
+            LinkedIn
+          </Link>
+        </p>
+        <p>
+          Created by
+          <Link
+            href="https://github.com/Yevhenii770"
+            className=" underline underline-offset-1"
+          >
+            Yevhenii
+          </Link>
+        </p>
       </div>
     </footer>
   );
