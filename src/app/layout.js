@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
         <main className="flex min-h-screen flex-col items-center">
           {children}
         </main>
+
         <Footer />
         <div id="modal-root"></div>
       </body>

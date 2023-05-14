@@ -4,7 +4,7 @@ import MobileModal from "./mobileModal";
 const MobileMenu = ({ show, togleModal }) => {
   return (
     <>
-      <button onClick={togleModal}>
+      <button type="button" onClick={togleModal}>
         <Earth />
       </button>
       {show && <MobileModal onClose={togleModal} />}
@@ -13,4 +13,3 @@ const MobileMenu = ({ show, togleModal }) => {
 };
 
 export default MobileMenu;
-
