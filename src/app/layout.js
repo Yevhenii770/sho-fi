@@ -2,7 +2,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navBar";
 import Footer from "@/components/footer";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,13 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap"
-          rel="stylesheet"
-        ></link>
-      </Head>
+    <html lang="uk">
       <body className={inter.className}>
         <Navbar />
         <main className="flex min-h-screen flex-col items-center">
