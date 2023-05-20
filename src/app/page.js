@@ -1,17 +1,9 @@
-import { NextPage } from "next";
 import Carousel from "../components/Carousel";
-
 import Image from "next/image";
 import ButtonSearch from "@/components/buttonSearch";
+import IMAGES from "../img";
 
 export default function Home() {
-  const images = [
-    "https://ibb.co/31x44H1",
-    "https://ibb.co/31x44H1",
-    "https://ibb.co/31x44H1",
-    "https://ibb.co/31x44H1",
-  ];
-
   return (
     <div className="container hover:ease-in">
       <div className="p-2">
@@ -21,7 +13,7 @@ export default function Home() {
         {/* Carousel */}
         <div className="lg:w-3/4 mx-auto my-2">
           <Carousel loop>
-            {images.map((src, i) => {
+            {IMAGES.map((src, i) => {
               return (
                 <div className="relative h-64 flex-[0_0_100%]" key={i}>
                   <Image src={src} fill className="object-cover" alt="alt" />
