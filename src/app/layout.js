@@ -15,9 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="uk">
       <body className={inter.className}>
         <Navbar />
-        <main className="flex min-h-screen flex-col items-center">
-          {children}
-        </main>
+        <main className="flex flex-col items-center">{children}</main>
 
         <Footer />
         <div id="modal-root"></div>
