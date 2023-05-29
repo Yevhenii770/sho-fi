@@ -1,3 +1,9 @@
+import SearchBar from "@/components/searchForm";
+
 export default function Page() {
-  return <h1>Page search</h1>;
+  return (
+    <div className="container hover:ease-in">
+      <SearchBar />
+    </div>
+  );
 }
