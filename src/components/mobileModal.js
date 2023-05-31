@@ -5,7 +5,7 @@ import IconClose from "../svg/icons-close.svg";
 export const MobileModal = ({ onClose }) => {
   return ReactDOM.createPortal(
     <div className="absolute top-0 left-0 w-full h-[296vh] flex content-center items-center bg-white">
-      <div className="p-12 w-full h-[296vh]">
+      <div className="p-12 w-full h-full	">
         <button onClick={onClose} className="absolute top-4 right-4">
           <IconClose />
         </button>
